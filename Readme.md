@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Александр Павличенко](https://up.htmlacademy.ru/adaptive/27/user/541503).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Цыганов](https://htmlacademy.ru/profile/olegtsyganov).
 
 ---
 
