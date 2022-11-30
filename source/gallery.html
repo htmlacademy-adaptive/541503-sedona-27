@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Седона — небольшой городок в Аризоне, заслуживающий большего!">
-    <meta name="keywords" content="Седона, туризм, Аризона, городок, жилье, мотели, гостиницы, еда, топовый фирменный бургер, сувениры, мост дьявола, достопримечательности, красивая дорога, мало туристов.">
+    <meta name="keywords" content="Седона, туризм, Аризона, городок, фото, видео, неродные просторы, местная растительность, дорога на Север, мост дьявола, видеопрезентация.">
     <link rel="icon" type="image/png" href="../favicon.ico" sizes="32x32">
     <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="32x32">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" sizes="32x32">
     <link href="styles/styles.css" rel="stylesheet">
-    <title>HTML Academy: Седона - главная страница</title>
+    <title>HTML Academy: Седона - страница формы отзывов</title>
   </head>
   <body class="page__body page-body">
     <div class="container-outer">
@@ -70,75 +70,123 @@
         </nav>
       </header>
       <main class="container-outer__main-content">
-        <h1 class="visually-hidden">Главная страница проекта Седона</h1>
+        <h1 class="visually-hidden">Страница формы отзыва проекта Седона</h1>
         <section class="promo">
           <h2 class="visually-hidden">Промо-блок</h2>
-          <div class="promo__images-wrapper promo-images-wrapper">
-            <div class="promo-images-wrapper__image-text-wrapper">
-              <img class="promo-images-wrapper__image-text" src="img/welcome.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona. “Because the Grand Canyon sucks!„">
+          <div class="promo__images-wrapper promo-images-wrapper promo-images-wrapper--page-inner">
+            <div class="promo-images-wrapper__image-text-wrapper promo-images-wrapper__image-text-wrapper--page-inner">
+              <img class="promo-images-wrapper__image-text" src="img/sedona-text.svg" width="229" height="39" alt="Welcome to the gorgeous Sedona. “Because the Grand Canyon sucks!„">
             </div>
-            <img class="promo-images-wrapper__image" src="img/promo-image-mobile.jpg" width="320" height="389" alt="Пейзаж Седоны. Красивые скалистые горы с деревьями.">
+            <img class="promo-images-wrapper__image" src="img/promo-inner-mobile.jpg" width="320" height="214" alt="Пейзаж Седоны. Красивые скалистые горы с деревьями.">
           </div>
-          <p class="promo__slogan">Седона — небольшой городок в&nbsp;Аризоне, заслуживающий большего!</p>
         </section>
-        <section class="advantages">
-          <h2 class="visually-hidden">Преимущества Седоны</h2>
-          <p class="advantages__lead">Рассмотрим 5 причин, по&nbsp;которым Седона круче, чем&nbsp;Гранд-Каньон!</p>
-          <ul class="advantages-list">
-            <li class="advantage advantage--large advantage--accented-bg advantage--decor-top">
-              <div class="advantage__text-content">
-                <h3 class="advantage__title">Настоящий городок</h3>
-                <p class="advantage__text">Седона не&nbsp;аттракцион для&nbsp;туристов, там&nbsp;течёт своя жизнь</p>
-              </div>
-              <div class="advantage__img-wrapper">
-                <img class="advantage__img" src="img/photo-city-mobile.jpg" width="320" height="260" alt="Фрагмент красивой архитектуры городка в американском стиле, также видно красивые деревья.">
-              </div>
-              <ul class="advantage__sublist advantage-sublist">
-                <li class="advantage-sublist-item advantage-sublist-item--housing">
-                  <h4 class="advantage-sublist-item__title">Жильё</h4>
-                  <p class="advantage-sublist-item__text">Рекомендуем пожить в&nbsp;настоящем мотеле, всё&nbsp;как&nbsp;в&nbsp;кино!</p>
-                </li>
-                <li class="advantage-sublist-item advantage-sublist-item--food">
-                  <h4 class="advantage-sublist-item__title">Еда</h4>
-                  <p class="advantage-sublist-item__text">Всегда заказывайте фирменный&nbsp;бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
-                </li>
-                <li class="advantage-sublist-item advantage-sublist-item--souvenirs">
-                  <h4 class="advantage-sublist-item__title">Сувениры</h4>
-                  <p class="advantage-text">Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
-                </li>
-              </ul>
-            </li>
-            <li class="advantage advantage--large advantage--accented-bg advantage--reverse-layout">
-              <div class="advantage__text-content">
-                <h3 class="advantage__title">Там есть мост дьявола</h3>
-                <p class="advantage__text">Да, по&nbsp;нему можно пройти! Если вы&nbsp;осмелитесь, конечно</p>
-              </div>
-              <div class="advantage__img-wrapper">
-                <img class="advantage-img" src="img/devils-bridge-mobile.jpg" width="320" height="260" alt="Мост дьявола - узкий скалистый мост над пропастью на фоне красивого пейзажа.">
+        <section class="gallery">
+          <h2 class="gallery__title">Фото и видео</h2>
+          <p class="gallery__lead">Не&nbsp;можете решиться на&nbsp;путешествие из&#8209;за курса? Фотографии помогут вам&nbsp;забыть о&nbsp;политике и&nbsp;экономике.</p>
+          <ul class="photos-list">
+            <li class="photo photo--large">
+              <a class="photo__link" href="#">
+                <img class="photo__image" src="img/open-spaces-mobile.jpg" width="280" height="280" alt="Просторы Седоны.">
+              </a>
+              <div class="photo__subscription">
+                <div class="photo__caption">
+                  <h3 class="photo__title">Неродные просторы</h3>
+                  <dl class="photo__author">
+                    <dt class="photo__author-term">Автор фото:</dt>
+                    <dd class="photo__author-definition">Борис</dd>
+                  </dl>
+                </div>
+                <div class="likes">
+                  <button class="likes__button" type="button">
+                    <svg class="likes__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                    </svg>
+                    <span class="visually-hidden">Мне нравится</span>
+                  </button>
+                  <span class="likes__number">1350</span>
+                </div>
               </div>
             </li>
-            <li class="advantage container-inner">
-              <h3 class="advantage__title">Небольшая площадь</h3>
-              <p class="advantage__text">Все интересные места находятся очень близко</p>
+            <li class="photo">
+              <a class="photo__link" href="#">
+                <img class="photo__image" src="img/vegetation-mobile.jpg" width="280" height="280" alt="Кактус Седоны.">
+              </a>
+              <div class="photo__subscription">
+                <div class="photo__caption">
+                  <h3 class="photo__title">Местная растительность</h3>
+                  <dl class="photo__author">
+                    <dt class="photo__author-term">Автор фото:</dt>
+                    <dd class="photo__author-definition">Сергей</dd>
+                  </dl>
+                </div>
+                <div class="likes">
+                  <button class="likes__button" type="button">
+                    <svg class="likes__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                    </svg>
+                    <span class="visually-hidden">Мне нравится</span>
+                  </button>
+                  <span class="likes__number">143</span>
+                </div>
+              </div>
             </li>
-            <li class="advantage container-inner">
-              <h3 class="advantage__title">Красивая дорога</h3>
-              <p class="advantage__text">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</p>
+            <li class="photo">
+              <a class="photo__link" href="#">
+                <img class="photo__image" src="img/north-mobile.jpg" width="280" height="280" alt="Горная дорога.">
+              </a>
+              <div class="photo__subscription">
+                <div class="photo__caption">
+                  <h3 class="photo__title">Дорога на&nbsp;Север</h3>
+                  <dl class="photo__author">
+                    <dt class="photo__author-term">Автор фото:</dt>
+                    <dd class="photo__author-definition">Петр</dd>
+                  </dl>
+                </div>
+                <div class="likes">
+                  <button class="likes__button" type="button">
+                    <svg class="likes__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                    </svg>
+                    <span class="visually-hidden">Мне нравится</span>
+                  </button>
+                  <span class="likes__number">96</span>
+                </div>
+              </div>
             </li>
-            <li class="advantage container-inner">
-              <h3 class="advantage__title">Мало туристов</h3>
-              <p class="advantage__text">Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там</p>
+            <li class="photo">
+              <a class="photo__link" href="#">
+                <img class="photo__image" src="img/devils-bridge-gallery-mobile.jpg" width="280" height="280" alt="Мост дьявола.">
+              </a>
+              <div class="photo__subscription">
+                <div class="photo__caption">
+                  <h3 class="photo__title">Мост дьявола</h3>
+                  <dl class="photo__author">
+                    <dt class="photo__author-term">Автор фото:</dt>
+                    <dd class="photo__author-definition">Антон</dd>
+                  </dl>
+                </div>
+                <div class="likes">
+                  <button class="likes__button" type="button">
+                    <svg class="likes__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                    </svg>
+                    <span class="visually-hidden">Мне нравится</span>
+                  </button>
+                  <span class="likes__number">254</span>
+                </div>
+              </div>
             </li>
           </ul>
-        </section>
-        <section class="section trip-date container-inner">
-          <h2 class="section__title trip-date__title">Заинтересовались?</h2>
-          <p class="trip-date__lead">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Cедоне</p>
-          <a class="button" href="#">Найти гостиницу</a>
-        </section>
-        <section class="map">
-          <h2 class="visually-hidden">Карта с расположением Седоны</h2>
-          <iframe class="map__image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1675738.146511372!2d-111.95072129463118!3d34.88320279659509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2suk!4v1669828517800!5m2!1sru!2suk" width="320" height="350"  name="Map of Sedona" allow="fullscreen" loading="lazy" referrerpolicy="no-referrer"></iframe>
+          <div class="video-subsection">
+            <h3 class="video-subsection__title">Все&nbsp;еще&nbsp;сомневаетесь?</h3>
+            <p class="video-subsection__lead">Смотрите видеопрезентацию и&nbsp;скорее за&nbsp;билетами, пока они не подорожали в&nbsp;очередной&nbsp;раз!</p>
+            <div class="video">
+              <img class="video__poster" src="img/video-mobile.jpg" width="280" height="177" alt="Фрагмент горной дороги с автомобилями на ней.">
+              <button class="video__button" type="button">
+                <span class="visually-hidden">Смотреть видео</span>
+              </button>
+            </div>
+          </div>
         </section>
       </main>
       <footer class="container-outer__footer page-footer">

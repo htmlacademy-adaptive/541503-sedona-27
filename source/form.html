@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Седона — небольшой городок в Аризоне, заслуживающий большего!">
-    <meta name="keywords" content="Седона, туризм, Аризона, городок, жилье, мотели, гостиницы, еда, топовый фирменный бургер, сувениры, мост дьявола, достопримечательности, красивая дорога, мало туристов.">
+    <meta name="keywords" content="Седона, туризм, Аризона, городок, отзывы, эмоции, мост дьявола, Гора-Колокол, Слайд-парк, Красные скалы.">
     <link rel="icon" type="image/png" href="../favicon.ico" sizes="32x32">
     <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="32x32">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" sizes="32x32">
     <link href="styles/styles.css" rel="stylesheet">
-    <title>HTML Academy: Седона - главная страница</title>
+    <title>HTML Academy: Седона - страница формы отзывов</title>
   </head>
   <body class="page__body page-body">
     <div class="container-outer">
@@ -70,75 +70,89 @@
         </nav>
       </header>
       <main class="container-outer__main-content">
-        <h1 class="visually-hidden">Главная страница проекта Седона</h1>
+        <h1 class="visually-hidden">Страница формы отзыва проекта Седона</h1>
         <section class="promo">
           <h2 class="visually-hidden">Промо-блок</h2>
-          <div class="promo__images-wrapper promo-images-wrapper">
-            <div class="promo-images-wrapper__image-text-wrapper">
-              <img class="promo-images-wrapper__image-text" src="img/welcome.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona. “Because the Grand Canyon sucks!„">
+          <div class="promo__images-wrapper promo-images-wrapper promo-images-wrapper--page-inner">
+            <div class="promo-images-wrapper__image-text-wrapper promo-images-wrapper__image-text-wrapper--page-inner">
+              <img class="promo-images-wrapper__image-text" src="img/sedona-text.svg" width="229" height="39" alt="Welcome to the gorgeous Sedona. “Because the Grand Canyon sucks!„">
             </div>
-            <img class="promo-images-wrapper__image" src="img/promo-image-mobile.jpg" width="320" height="389" alt="Пейзаж Седоны. Красивые скалистые горы с деревьями.">
+            <img class="promo-images-wrapper__image" src="img/promo-inner-mobile.jpg" width="320" height="214" alt="Пейзаж Седоны. Красивые скалистые горы с деревьями.">
           </div>
-          <p class="promo__slogan">Седона — небольшой городок в&nbsp;Аризоне, заслуживающий большего!</p>
         </section>
-        <section class="advantages">
-          <h2 class="visually-hidden">Преимущества Седоны</h2>
-          <p class="advantages__lead">Рассмотрим 5 причин, по&nbsp;которым Седона круче, чем&nbsp;Гранд-Каньон!</p>
-          <ul class="advantages-list">
-            <li class="advantage advantage--large advantage--accented-bg advantage--decor-top">
-              <div class="advantage__text-content">
-                <h3 class="advantage__title">Настоящий городок</h3>
-                <p class="advantage__text">Седона не&nbsp;аттракцион для&nbsp;туристов, там&nbsp;течёт своя жизнь</p>
+        <section class="reviews-form-section container-inner">
+          <h2 class="reviews-form-section__title">Оставьте свой отзыв</h2>
+          <p class="reviews-form-section__lead">Помогите нашим отелям стать лучше! оставьте отзыв о&nbsp;них, а&nbsp;также о&nbsp;посещенных вами достопримечательностях</p>
+          <form class="reviews-form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="reviews-form-group">
+              <legend class="reviews-form-group__title">Представьтесь:</legend>
+              <div class="input-label-wrapper">
+                <label class="input-label-wrapper__label" for="reviews-form-name-field">Имя<sup>*</sup>:</label>
+                <input class="input" id="reviews-form-name-field" name="name" type="text" placeholder="Пётр" value="" required>
               </div>
-              <div class="advantage__img-wrapper">
-                <img class="advantage__img" src="img/photo-city-mobile.jpg" width="320" height="260" alt="Фрагмент красивой архитектуры городка в американском стиле, также видно красивые деревья.">
+              <div class="input-label-wrapper">
+                <label class="input-label-wrapper__label" for="reviews-form-surname-field">Фамилия<sup>*</sup>:</label>
+                <input class="input" id="reviews-form-surname-field" name="surname" type="text" placeholder="Иванов *" value="" required>
               </div>
-              <ul class="advantage__sublist advantage-sublist">
-                <li class="advantage-sublist-item advantage-sublist-item--housing">
-                  <h4 class="advantage-sublist-item__title">Жильё</h4>
-                  <p class="advantage-sublist-item__text">Рекомендуем пожить в&nbsp;настоящем мотеле, всё&nbsp;как&nbsp;в&nbsp;кино!</p>
-                </li>
-                <li class="advantage-sublist-item advantage-sublist-item--food">
-                  <h4 class="advantage-sublist-item__title">Еда</h4>
-                  <p class="advantage-sublist-item__text">Всегда заказывайте фирменный&nbsp;бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
-                </li>
-                <li class="advantage-sublist-item advantage-sublist-item--souvenirs">
-                  <h4 class="advantage-sublist-item__title">Сувениры</h4>
-                  <p class="advantage-text">Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
-                </li>
-              </ul>
-            </li>
-            <li class="advantage advantage--large advantage--accented-bg advantage--reverse-layout">
-              <div class="advantage__text-content">
-                <h3 class="advantage__title">Там есть мост дьявола</h3>
-                <p class="advantage__text">Да, по&nbsp;нему можно пройти! Если вы&nbsp;осмелитесь, конечно</p>
+              <div class="input-label-wrapper">
+                <label class="input-label-wrapper__label" for="reviews-form-fathers-name-field">Отчество<sup>*</sup>:</label>
+                <input class="input" id="reviews-form-fathers-name-field" name="fathers-name" type="text" placeholder="Викторович" value="" required>
               </div>
-              <div class="advantage__img-wrapper">
-                <img class="advantage-img" src="img/devils-bridge-mobile.jpg" width="320" height="260" alt="Мост дьявола - узкий скалистый мост над пропастью на фоне красивого пейзажа.">
+            </fieldset>
+            <fieldset class="reviews-form-group reviews-form-group--contacts">
+              <legend class="reviews-form-group__title">Контактная информация:</legend>
+              <div class="input-label-wrapper">
+                <label class="input-label-wrapper__label" for="reviews-form-telephone-number-field">Контактный телефон<sup>*</sup>:</label>
+                <input class="input input--contacts input--telephone-number" id="reviews-form-telephone-number-field" name="telephone-number" type="tel" placeholder="Введите телефон" value="" required>
               </div>
-            </li>
-            <li class="advantage container-inner">
-              <h3 class="advantage__title">Небольшая площадь</h3>
-              <p class="advantage__text">Все интересные места находятся очень близко</p>
-            </li>
-            <li class="advantage container-inner">
-              <h3 class="advantage__title">Красивая дорога</h3>
-              <p class="advantage__text">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</p>
-            </li>
-            <li class="advantage container-inner">
-              <h3 class="advantage__title">Мало туристов</h3>
-              <p class="advantage__text">Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там</p>
-            </li>
-          </ul>
-        </section>
-        <section class="section trip-date container-inner">
-          <h2 class="section__title trip-date__title">Заинтересовались?</h2>
-          <p class="trip-date__lead">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Cедоне</p>
-          <a class="button" href="#">Найти гостиницу</a>
-        </section>
-        <section class="map">
-          <h2 class="visually-hidden">Карта с расположением Седоны</h2>
-          <iframe class="map__image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1675738.146511372!2d-111.95072129463118!3d34.88320279659509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2suk!4v1669828517800!5m2!1sru!2suk" width="320" height="350"  name="Map of Sedona" allow="fullscreen" loading="lazy" referrerpolicy="no-referrer"></iframe>
+              <div class="input-label-wrapper">
+                <label class="input-label-wrapper__label" for="reviews-form-email-field">Электронная почта<sup>*</sup>:</label>
+                <input class="input input--contacts input--email" id="reviews-form-email-field" name="email" type="email" placeholder="Введите e-mail" value="" required>
+              </div>
+            </fieldset>
+            <fieldset class="reviews-form-group reviews-form-group--review-content">
+              <legend class="reviews-form-group__title reviews-form-group__title--accented">Ваше общее впечатление:</legend>
+              <div class="input-label-wrapper">
+                <input class="radiobutton" id="reviews-form-positive-impression" name="impression" value="positive-impression" type="radio" checked>
+                <label class="label label--review-content" for="reviews-form-positive-impression">Скорее положительное</label>
+              </div>
+              <div class="input-label-wrapper">
+                <input class="radiobutton" id="reviews-form-negative-impression" name="impression" value="negative-impression" type="radio">
+                <label class="label label--review-content" for="reviews-form-negative-impression">Скорее отрицательное</label>
+              </div>
+              <div class="input-label-wrapper">
+                <input class="radiobutton" id="reviews-form-unknown-impression" name="impression" value="unknown-impression" type="radio">
+                <label class="label label--review-content" for="reviews-form-unknown-impression">Затрудняюсь ответить</label>
+              </div>
+            </fieldset>
+            <fieldset class="reviews-form-group reviews-form-group--review-content">
+              <legend class="reviews-form-group__title reviews-form-group__title--accented">Посещенные достопримечательности:</legend>
+              <div class="input-label-wrapper">
+                <input class="checkbox" id="reviews-form-devils-bridge" name="devils-bridge" type="checkbox" checked>
+                <label class="label label--review-content" for="reviews-form-devils-bridge">Мост Дьявола</label>
+              </div>
+              <div class="input-label-wrapper">
+                <input class="checkbox" id="reviews-form-mountain-bell" name="mountain-bell" type="checkbox" checked>
+                <label class="label label--review-content" for="reviews-form-mountain-bell">Гора-Колокол</label>
+              </div>
+              <div class="input-label-wrapper">
+                <input class="checkbox" id="reviews-form-slide-park" name="slide-park" type="checkbox" checked>
+                <label class="label label--review-content" for="reviews-form-slide-park">Слайд-парк</label>
+              </div>
+              <div class="input-label-wrapper">
+                <input class="checkbox" id="reviews-form-red-rocks" name="red-rocks" type="checkbox">
+                <label class="label label--review-content" for="reviews-form-red-rocks">Красные скалы</label>
+              </div>
+            </fieldset>
+            <fieldset class="reviews-form-group reviews-form-group--review-content">
+              <legend class="reviews-form-group__title reviews-form-group__title--accented">Опишите свои эмоции:</legend>
+              <textarea class="textarea" id="reviews-form-emotions" name="emotions" rows="10" placeholder="Опишите подробно все свои восторги "></textarea>
+            </fieldset>
+            <div class="reviews-form__footer">
+              <button class="button" type="submit">Отправить отзыв</button>
+              <p class="reviews-form__footnote"><sup>*</sup> — обязательные поля</p>
+            </div>
+          </form>
         </section>
       </main>
       <footer class="container-outer__footer page-footer">
@@ -186,6 +200,20 @@
           </dl>
         </div>
       </footer>
+      <div class="modal-container">
+        <div class="modal modal-error">
+          <h2 class="modal__title">Что&#8209;то&nbsp;пошло не&nbsp;так!</h2>
+          <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы&nbsp;забыли их&nbsp;заполнить</p>
+          <button class="button" type="button">ОК</button>
+        </div>
+        <div class="modal modal-success">
+          <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+          <p class="modal-success__text">Спасибо за&nbsp;ваше участие, ваш&nbsp;отзыв уже&nbsp;поступил к&nbsp;нам. В&nbsp;ближайшее время мы&nbsp;опубликуем его&nbsp;на&nbsp;сайте.</p>
+          <div class="modal-success__footer">
+            <button class="button" type="button">Закрыть окно</button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
