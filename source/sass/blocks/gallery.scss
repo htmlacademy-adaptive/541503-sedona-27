@@ -1,0 +1,19 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.gallery {
+    padding-top: 37px;
+}
+
+.gallery__title {
+    @include mixin.title-font-s;
+
+    margin-bottom: 30px;
+}
+
+.gallery__lead {
+    @include mixin.text-font;
+
+    margin-bottom: 25px;
+}

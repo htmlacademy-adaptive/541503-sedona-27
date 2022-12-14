@@ -1,0 +1,36 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.modal-failure {
+    position: relative;
+    top: 50%;
+    z-index: 11;
+  
+    display: none;
+    padding: 45px 42px 35px 41px;
+    width: 100%;
+
+    text-align: center;
+  
+    background-color: var.$color-main-bg;
+    box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  
+    transform: translateY(-50%);
+}
+
+.modal-failure--shown {
+    display: block;
+}
+
+.modal-failure__title {
+    @include mixin.title-font-s;
+
+    margin-bottom: 24px;
+}
+
+.modal-failure__text {
+    @include mixin.text-font;
+
+    margin-bottom: 28px;
+}

@@ -1,0 +1,38 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.page-footer {
+    padding: 29px 18px 23px;
+}
+
+.page-footer__hashtag {
+    display: block;
+
+    @include mixin.title-font-l;
+
+    margin-bottom: 33px;
+}
+
+.page-footer__socials-list {
+    margin-bottom: 40px;
+}
+
+.page-footer__developer-link {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: max-content;
+
+    font-family: var.$main-font;
+    font-size: var.$font-s;
+    line-height: var.$line-height-s;
+    text-transform: uppercase;
+    color: var.$color-accented-text;
+}
+
+.page-footer__developer-link-text {
+    margin-right: 12px;
+}
+
+

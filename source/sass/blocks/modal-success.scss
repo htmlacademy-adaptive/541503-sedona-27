@@ -1,0 +1,45 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.modal-success {
+    position: relative;
+    top: 50%;
+    z-index: 11;
+  
+    display: none;
+    width: 100%;
+
+    text-align: center;
+  
+    background-color: var.$color-main-bg;
+    box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  
+    transform: translateY(-50%);
+}
+
+.modal-success--shown {
+    display: block;
+}
+
+.modal-success__text-content {
+    padding: 39px 39px 30px 37px;
+}
+
+.modal-success__title {
+    @include mixin.title-font-s;
+
+    margin-bottom: 24px;
+}
+
+.modal-success__text {
+    @include mixin.text-font;
+
+    margin-bottom: 28px;
+}
+
+.modal-success__footer {
+    padding: 20px;
+
+    background-color: #f2f2f2;
+}

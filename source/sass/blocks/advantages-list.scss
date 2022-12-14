@@ -1,0 +1,92 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.advantages-list {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    background-color: #eeeeee;
+
+    counter-reset: advantages-counter;
+}
+
+.advantages-list__item {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+
+    counter-increment: advantages-counter;
+}
+
+.advantages-list__item--large {
+    display: grid;
+    padding: 0;
+
+    background-color: var.$color-main;
+}
+
+.advantages-list__text-content {
+    padding: 37px 18px;
+}
+
+.advantages-list__item--accented .advantages-list__text-content {
+    padding-top: 33px;
+    padding-bottom: 40px;
+}
+
+.advantages-list__item:not(.advantages-list-item--large)::after {
+    content: "";
+
+    margin-top: 24px;
+    margin-right: 18px;
+    margin-left: 18px;
+    width: calc(100% - (18px * 2));
+    height: 1px;
+    background-color: #d6d6d6;
+}
+
+.advantages-list__item:last-child:after {
+    margin-top: 27px;
+
+    background-color: transparent;
+}
+
+.advantages-list .advantages-list__item--large::after {
+    margin-top: 0;
+    height: 0;
+}
+
+.advantages-list__title {
+    display: flex;
+    flex-direction: column;
+
+    @include mixin.title-font-s;
+
+    margin-bottom: 11px;
+}
+
+.advantages-list__item--large .advantages-list__title {
+    color: var.$color-main-bg;
+} 
+
+.advantages-list__title::after {
+    content: "\2014 №" counter(advantages-counter) " \2014";
+
+    margin-bottom: 17px;
+
+    font-family: var.$main-font;
+    font-size: var.$font-s;
+    line-height: var.$line-height-s;
+    font-weight: var.$normal;
+}
+
+.advantages-list__text {
+    @include mixin.text-font;
+}
+
+.advantages-list__item--large .advantages-list__text {
+    color: var.$color-main-bg;
+}

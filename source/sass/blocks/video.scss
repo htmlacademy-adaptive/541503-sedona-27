@@ -1,0 +1,22 @@
+.video {
+    position: relative;
+}
+
+.video__button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    display: block;
+    padding: 0;
+    width: 0;
+    height: 0;
+
+    background-color: transparent;
+    border-top: 26px solid transparent;
+    border-right: none;
+    border-bottom: 26px solid transparent;
+    border-left: 48px solid rgba(255, 255, 255, 0.7);
+
+    transform: translate(-50%, -50%);
+}

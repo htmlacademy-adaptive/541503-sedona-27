@@ -1,0 +1,49 @@
+@use "fonts.scss";
+@use "variables.scss" as var;
+
+@mixin title-font-s {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-family: var.$main-font;
+  font-size: var.$font-m;
+  line-height: var.$line-height-l;
+  font-weight: var.$bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: var.$color-accented-text;
+}
+
+@mixin title-font-l {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-family: var.$main-font;
+  font-size: var.$font-l;
+  line-height: var.$line-height-l;
+  font-weight: var.$bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: var.$color-accented-text;
+}
+
+@mixin text-font {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-family: var.$main-font;
+  font-size: var.$font-s;
+  line-height: var.$line-height-s;
+  font-weight: var.$normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: var.$color-main-text;
+}
+
+@mixin label-review-content {
+  font-family: var.$main-font;
+  font-size: var.$font-m;
+  line-height: var.$line-height-l;
+  font-weight: var.$bold;
+  color: var.$color-accented-text;   
+}
