@@ -3,7 +3,7 @@
 @use "../global/mixins.scss" as mixin;
 
 .advantages__lead {
-    @include mixin.text-font;
+  @include mixin.text-font;
 
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }

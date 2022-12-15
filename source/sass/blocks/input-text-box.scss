@@ -2,38 +2,38 @@
 @use "../global/variables.scss" as var;
 
 .input-text-box--contacts::after {
-    content: "";
+  content: "";
 
-    position: absolute;
-    right: 0;
-    bottom: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 
-    width: 58px;
-    height: 58px;
+  width: 58px;
+  height: 58px;
 
-    background-color: #e6e6e6;
+  background-color: #e6e6e6;
 }
 
 .input-text-box--phone::after {
-    background-image: url("../../img/phone.svg");
-    background-repeat: no-repeat;
-    background-size: 18px 18px;
-    background-position: center center;
+  background-image: url("../../img/phone.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: center center;
 }
 
 .input-text-box--email::after {
-    background-image: url(../../img/envelope.svg);
-    background-repeat: no-repeat;
-    background-size: 16px 12px;
-    background-position: center center;
+  background-image: url("../../img/envelope.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 12px;
+  background-position: center center;
 }
 
 .input-text-box__label {
-    margin: 0 16px;
+  margin: 0 16px;
 
-    font-family: var.$main-font;
-    font-size: var.$font-s;
-    line-height: var.$line-height-s;
-    text-transform: uppercase;
-    color: var.$color-main-text;
+  font-family: var.$main-font;
+  font-size: var.$font-s;
+  line-height: var.$line-height-s;
+  text-transform: uppercase;
+  color: var.$color-main-text;
 }

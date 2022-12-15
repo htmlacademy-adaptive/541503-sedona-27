@@ -3,13 +3,13 @@
 @use "../global/mixins.scss" as mixin;
 
 .promo {
-    padding-bottom: 35px;
+  padding-bottom: 35px;
 }
 
 .promo__images-wrapper {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .promo__slogan {
-    @include mixin.title-font-s;
+  @include mixin.title-font-s;
 }

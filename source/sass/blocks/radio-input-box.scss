@@ -3,40 +3,40 @@
 @use "../global/mixins.scss" as mixin;
 
 .radio-input-box:not(:last-child) {
-    padding-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 .radio-input-box__label {
-    position: relative;
+  position: relative;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    @include mixin.label-review-content;
+  @include mixin.label-review-content;
 }
 
 .radio-input-box__label::before {
-    content: "";
+  content: "";
 
-    flex-shrink: 0;
-    margin-right: 16px;
-    width: 46px;
-    height: 46px;
+  flex-shrink: 0;
+  margin-right: 16px;
+  width: 46px;
+  height: 46px;
 
-    background-color: #f2f2f2;
-    border-radius: 50%;
+  background-color: #f2f2f2;
+  border-radius: 50%;
 }
 
 .radio-input-box__radio-input:checked + .radio-input-box__label::after {
-    content: "";
+  content: "";
 
-    position: absolute;
-    left: 15px;
-    top: 15px;
+  position: absolute;
+  left: 15px;
+  top: 15px;
 
-    width: 16px;
-    height: 16px;
+  width: 16px;
+  height: 16px;
 
-    background-color: var.$color-main-text;
-    border-radius: 50%;
+  background-color: var.$color-main-text;
+  border-radius: 50%;
 }

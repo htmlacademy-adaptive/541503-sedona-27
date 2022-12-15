@@ -2,23 +2,23 @@
 @use "../global/variables.scss" as var;
 
 .button {
-    display: inline-block;
-    padding: 16px 49px;
+  display: inline-block;
+  padding: 16px 49px;
 
-    font-family: var.$main-font;
-    font-size: var.$font-l;
-    line-height: var.$font-l;
-    font-weight: var.$bold;
-    text-transform: uppercase;
-    text-align: center;
-    color: var.$color-main-bg;
+  font-family: var.$main-font;
+  font-size: var.$font-l;
+  line-height: var.$font-l;
+  font-weight: var.$bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: var.$color-main-bg;
 
-    background-color: var.$color-main;
-    border: none;
+  background-color: var.$color-main;
+  border: none;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .button--modal {
-    padding: 18px 64px 14px;
+  padding: 18px 64px 14px;
 }

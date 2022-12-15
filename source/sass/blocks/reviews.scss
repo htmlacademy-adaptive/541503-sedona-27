@@ -3,17 +3,17 @@
 @use "../global/mixins.scss" as mixin;
 
 .reviews {
-    padding-top: 36px;
+  padding-top: 36px;
 }
 
 .reviews__title {
-    @include mixin.title-font-l;
+  @include mixin.title-font-l;
 
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .reviews__lead {
-    @include mixin.text-font;
+  @include mixin.text-font;
 
-    margin-bottom: 28px;
+  margin-bottom: 28px;
 }

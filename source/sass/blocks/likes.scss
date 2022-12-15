@@ -2,26 +2,26 @@
 @use "../global/variables.scss" as var;
 
 .likes {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    margin-top: 11px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-top: 11px;
 }
 
 .likes__button {
-    margin-right: 14px;
-    padding: 0;
+  margin-right: 14px;
+  padding: 0;
 
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .likes__number {
-    font-family: var.$main-font;
-    font-size: var.$font-s;
-    line-height: var.$line-height-s;
-    font-weight: var.$bold;
-    color: var.$color-accented-text;
+  font-family: var.$main-font;
+  font-size: var.$font-s;
+  line-height: var.$line-height-s;
+  font-weight: var.$bold;
+  color: var.$color-accented-text;
 }

@@ -3,10 +3,10 @@
 @use "../global/mixins.scss" as mixin;
 
 .advantage-sublist {
-    display: grid;
-    margin: 0;
-    padding: 0 0 46px 0;
-    list-style-type: none;
+  display: grid;
+  margin: 0;
+  padding: 0 0 46px 0;
+  list-style-type: none;
 
-    background-color: var.$color-main-bg;
+  background-color: var.$color-main-bg;
 }

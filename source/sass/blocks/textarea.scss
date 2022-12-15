@@ -2,20 +2,20 @@
 @use "../global/variables.scss" as var;
 
 .textarea {
-    padding: 16px;
-    width: 100%;
-    height: 150px;
+  padding: 16px;
+  width: 100%;
+  height: 150px;
 
-    background-color: #f2f2f2;
-    border: none;
+  background-color: #f2f2f2;
+  border: none;
 
-    resize: none;
+  resize: none;
 }
 
 .textarea::placeholder {
-    font-family: var.$main-font;
-    font-size: var.$font-m;
-    line-height: var.$line-height-l;
-    font-weight: var.$bold;
-    color: rgba(0, 0, 0, 0.3);
+  font-family: var.$main-font;
+  font-size: var.$font-m;
+  line-height: var.$line-height-l;
+  font-weight: var.$bold;
+  color: rgba(0, 0, 0, 0.3);
 }

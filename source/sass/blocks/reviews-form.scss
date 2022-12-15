@@ -2,16 +2,16 @@
 @use "../global/variables.scss" as var;
 
 .reviews-form__footer {
-    padding: 32px 20px 24px;
+  padding: 32px 20px 24px;
 
-    text-align: center;
+  text-align: center;
 }
 
 .reviews-form__footnote {
-    font-family: var.$main-font;
-    font-size: 12px;
-    line-height: var.$line-height-s;
-    text-transform: uppercase;
-    text-align: right;
-    color: rgba(51, 51, 51, 0.6);
+  font-family: var.$main-font;
+  font-size: 12px;
+  line-height: var.$line-height-s;
+  text-transform: uppercase;
+  text-align: right;
+  color: rgba(51, 51, 51, 0.6);
 }

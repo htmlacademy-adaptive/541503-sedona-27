@@ -3,33 +3,33 @@
 @use "../global/mixins.scss" as mixin;
 
 .checkbox-box:not(:last-child) {
-    padding-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 .checkbox-box__label {
-    position: relative;
+  position: relative;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    @include mixin.label-review-content;
+  @include mixin.label-review-content;
 }
 
 .checkbox-box__label::before {
-    content: "";
+  content: "";
 
-    flex-shrink: 0;
-    margin-right: 16px;
-    width: 46px;
-    height: 46px;
+  flex-shrink: 0;
+  margin-right: 16px;
+  width: 46px;
+  height: 46px;
 
-    background-color: #f2f2f2;
-    border-radius: 4px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
 }
 
 .checkbox-box__checkbox:checked + .checkbox-box__label::before {
-    background-image: url("../../img/tick.svg");
-    background-repeat: no-repeat;
-    background-size: 22px 16px;
-    background-position: center center;
+  background-image: url("../../img/tick.svg");
+  background-repeat: no-repeat;
+  background-size: 22px 16px;
+  background-position: center center;
 }

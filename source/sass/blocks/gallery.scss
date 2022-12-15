@@ -3,17 +3,17 @@
 @use "../global/mixins.scss" as mixin;
 
 .gallery {
-    padding-top: 37px;
+  padding-top: 37px;
 }
 
 .gallery__title {
-    @include mixin.title-font-s;
+  @include mixin.title-font-s;
 
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .gallery__lead {
-    @include mixin.text-font;
+  @include mixin.text-font;
 
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }

@@ -2,27 +2,27 @@
 @use "../global/variables.scss" as var;
 
 .input-text {
-    padding: 16px 64px 16px 16px;
-    width: 100%;
+  padding: 16px 64px 16px 16px;
+  width: 100%;
 
-    font-family: var.$main-font;
-    font-size: var.$font-m;
-    line-height: var.$line-height-l;
-    font-weight: var.$bold;
-    color: rgba(0, 0, 0, 0.3);
+  font-family: var.$main-font;
+  font-size: var.$font-m;
+  line-height: var.$line-height-l;
+  font-weight: var.$bold;
+  color: rgba(0, 0, 0, 0.3);
 
-    background-color: #f2f2f2;
-    border: none;
+  background-color: #f2f2f2;
+  border: none;
 }
 
 .input-text-box--contacts {
-    position: relative;
+  position: relative;
 }
 
 .input-text::placeholder {
-    font-family: var.$main-font;
-    font-size: var.$font-m;
-    line-height: var.$line-height-l;
-    font-weight: var.$bold;
-    color: rgba(0, 0, 0, 0.3);
+  font-family: var.$main-font;
+  font-size: var.$font-m;
+  line-height: var.$line-height-l;
+  font-weight: var.$bold;
+  color: rgba(0, 0, 0, 0.3);
 }
