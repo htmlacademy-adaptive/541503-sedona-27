@@ -1,19 +1,19 @@
 @use "../global/fonts.scss";
 @use "../global/variables.scss" as var;
 @use "../global/mixins.scss" as mixin;
- 
- .radio-input-box:not(:last-child) {
+
+.radio-input-box:not(:last-child) {
     padding-bottom: 16px;
- }
- 
- .radio-input-box__label {
+}
+
+.radio-input-box__label {
     position: relative;
 
     display: flex;
     align-items: center;
 
     @include mixin.label-review-content;
- }
+}
 
 .radio-input-box__label::before {
     content: "";
