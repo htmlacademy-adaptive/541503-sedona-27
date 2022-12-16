@@ -1,0 +1,23 @@
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.socials-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 6px;
+  justify-content: center;
+
+  @include mixin.list-reset;
+
+  margin: 0 0 40px;
+}
+
+.socials-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+
+  background-color: var.$color-main;
+}

@@ -1,0 +1,38 @@
+.promo-images-wrapper {
+  position: relative;
+}
+
+.promo-images-wrapper::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+
+  display: block;
+  width: 100%;
+  height: 57px;
+
+  background-image: url("../../img/promo-decor-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+}
+
+.promo-images-wrapper__image-text {
+  position: absolute;
+  left: 50%;
+  top: 90px;
+
+  transform: translateX(-50%);
+}
+
+.promo-images-wrapper__image-text--inner {
+  position: absolute;
+  left: 50%;
+  top: 52px;
+
+  transform: translateX(-50%);
+}

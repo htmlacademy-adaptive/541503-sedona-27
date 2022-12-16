@@ -1,0 +1,12 @@
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.advantage-sublist {
+  display: grid;
+
+  @include mixin.list-reset;
+
+  padding: 0 0 46px 0;
+
+  background-color: var.$color-main-bg;
+}

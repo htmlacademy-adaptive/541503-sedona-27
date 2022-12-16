@@ -1,0 +1,16 @@
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.advantage-sublist-item {
+  padding: 32px 18px 0 65px;
+}
+
+.advantage-sublist-item__title {
+  margin: 0 0 16px 0;
+
+  @include mixin.title-font-s;
+}
+
+.advantage-sublist-item__text {
+  @include mixin.text-font;
+}

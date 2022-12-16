@@ -1,0 +1,33 @@
+@use "../global/variables.scss" as var;
+
+.main-nav-toggle--open {
+  display: block;
+  padding: 0;
+  width: 23px;
+  height: 4px;
+
+  background-color: var.$color-main;
+  border: none;
+}
+
+.main-nav-toggle--open::before {
+  content: "";
+
+  display: block;
+  width: 23px;
+  height: 4px;
+
+  background-color: var.$color-main;
+  transform: translateY(-9px);
+}
+
+.main-nav-toggle--open::after {
+  content: "";
+
+  display: block;
+  width: 23px;
+  height: 4px;
+
+  background-color: var.$color-main;
+  transform: translateY(5px);
+}

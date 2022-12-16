@@ -1,0 +1,15 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.promo {
+  padding: 0 0 35px;
+}
+
+.promo__images-wrapper {
+  margin: 0 0 32px;
+}
+
+.promo__slogan {
+  @include mixin.title-font-s;
+}

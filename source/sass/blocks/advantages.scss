@@ -1,0 +1,8 @@
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.advantages__lead {
+  @include mixin.text-font;
+
+  margin-bottom: 16px;
+}

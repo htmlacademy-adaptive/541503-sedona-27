@@ -1,0 +1,21 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.trip-date {
+  padding: 38px 18px 49px;
+
+  text-align: center;
+}
+
+.trip-date__title {
+  @include mixin.title-font-l;
+
+  margin: 0 0 24px;
+}
+
+.trip-date__lead {
+  @include mixin.text-font;
+
+  margin: 0 0 32px;
+}

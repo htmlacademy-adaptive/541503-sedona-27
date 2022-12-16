@@ -1,0 +1,42 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.radio-input-box:not(:last-child) {
+  padding: 0 20px 16px;
+}
+
+.radio-input-box__label {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  @include mixin.label-review-content;
+}
+
+.radio-input-box__label::before {
+  content: "";
+
+  flex-shrink: 0;
+  margin: 0 16px 0 0;
+  width: 46px;
+  height: 46px;
+
+  background-color: var.$color-input-bg;
+  border-radius: 50%;
+}
+
+.radio-input-box__radio-input:checked + .radio-input-box__label::after {
+  content: "";
+
+  position: absolute;
+  left: 15px;
+  top: 15px;
+
+  width: 16px;
+  height: 16px;
+
+  background-color: var.$color-main-text;
+  border-radius: 50%;
+}

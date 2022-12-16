@@ -1,0 +1,18 @@
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.video-subsection {
+  padding: 17px 20px 0;
+}
+
+.video-subsection__title {
+  @include mixin.title-font-s;
+
+  margin: 0 0 30px;
+}
+
+.video-subsection__lead {
+  @include mixin.text-font;
+
+  margin: 0 0 38px;
+}

@@ -1,0 +1,21 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.button {
+  display: inline-block;
+  padding: 16px 49px;
+
+  @include mixin.title-font-l;
+
+  color: var.$color-main-bg;
+
+  background-color: var.$color-main;
+  border: none;
+
+  cursor: pointer;
+}
+
+.button--modal {
+  padding: 18px 64px 14px;
+}

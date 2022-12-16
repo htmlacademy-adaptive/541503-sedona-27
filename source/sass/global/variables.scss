@@ -1,0 +1,25 @@
+@use "fonts.scss";
+
+$main-font: "PT Sans", "Arial", sans-serif;
+
+$font-s: 14px;
+$font-m: 18px;
+$font-l: 21px;
+$font-xl: 30px;
+
+$line-height-s: 21px;
+$line-height-l: 26px;
+
+$normal: 400;
+$bold: 700;
+
+$color-main-bg: #ffffff;
+$color-main: #81b3d2;
+$color-main-hover: #669ec0;
+$color-main-down: #5496bd;
+$color-disabled: #e5e5e5;
+$color-advantage-border: #d6d6d6;
+$color-input-bg: #f2f2f2;
+$color-contacts-icons: #e6e6e6;
+$color-main-text: #333333;
+$color-accented-text: #000000;

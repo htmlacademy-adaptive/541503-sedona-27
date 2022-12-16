@@ -1,0 +1,27 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+
+.likes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin: 11px 0 0;
+}
+
+.likes__button {
+  margin: 0 14px 0 0;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.likes__number {
+  font-family: var.$main-font;
+  font-size: var.$font-s;
+  line-height: var.$line-height-s;
+  font-weight: var.$bold;
+  color: var.$color-accented-text;
+}

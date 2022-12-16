@@ -1,0 +1,22 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.input-text {
+  padding: 16px 64px 16px 16px;
+  width: 100%;
+
+  @include mixin.input-text;
+  color: var.$color-accented-text;
+
+  background-color: var.$color-input-bg;
+  border: none;
+}
+
+.input-text-box--contacts {
+  position: relative;
+}
+
+.input-text::placeholder {
+  @include mixin.input-text;
+}

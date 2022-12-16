@@ -1,0 +1,18 @@
+@use "../global/fonts.scss";
+@use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
+
+.textarea {
+  padding: 16px;
+  width: 100%;
+  height: 150px;
+
+  background-color: var.$color-input-bg;
+  border: none;
+
+  resize: none;
+}
+
+.textarea::placeholder {
+  @include mixin.input-text;
+}
