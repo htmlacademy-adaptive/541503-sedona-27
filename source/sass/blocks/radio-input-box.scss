@@ -3,7 +3,7 @@
 @use "../global/mixins.scss" as mixin;
 
 .radio-input-box:not(:last-child) {
-  padding-bottom: 16px;
+  padding: 0 20px 16px;
 }
 
 .radio-input-box__label {
@@ -19,11 +19,11 @@
   content: "";
 
   flex-shrink: 0;
-  margin-right: 16px;
+  margin: 0 16px 0 0;
   width: 46px;
   height: 46px;
 
-  background-color: #f2f2f2;
+  background-color: var.$color-input-bg;
   border-radius: 50%;
 }
 

@@ -3,6 +3,8 @@
 @use "global/variables.scss" as var;
 @use "global/mixins.scss";
 @use "helpers/visually-hidden.scss";
+@use "blocks/page.scss";
+@use "global/global-selectors.scss";
 @use "blocks/logo.scss";
 @use "blocks/main-nav-toggle.scss";
 @use "blocks/site-menu.scss";
@@ -34,41 +36,3 @@
 @use "blocks/likes.scss";
 @use "blocks/video-subsection.scss";
 @use "blocks/video.scss";
-
-.page {
-  height: 100%;
-}
-
-.page__body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  margin: 0 auto;
-  min-width: 320px;
-  min-height: 100%;
-
-  font-family: var.$main-font;
-  font-size: var.$font-m;
-  line-height: var.$line-height-s;
-  font-weight: var.$normal;
-  font-style: var.$normal;
-  word-break: break-word;
-  color: var.$color-main-text;
-
-  background-color: var.$color-main-bg;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-img {
-  display: block;
-  /*width: 100%;*/
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-}

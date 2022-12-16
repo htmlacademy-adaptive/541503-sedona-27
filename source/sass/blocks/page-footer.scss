@@ -1,4 +1,3 @@
-@use "../global/fonts.scss";
 @use "../global/variables.scss" as var;
 @use "../global/mixins.scss" as mixin;
 
@@ -11,11 +10,11 @@
 
   @include mixin.title-font-l;
 
-  margin-bottom: 33px;
+  margin: 0 0 33px;
 }
 
 .page-footer__socials-list {
-  margin-bottom: 40px;
+  margin: 0 0 40px;
 }
 
 .page-footer__developer-link {
@@ -24,13 +23,9 @@
   margin: 0 auto;
   width: max-content;
 
-  font-family: var.$main-font;
-  font-size: var.$font-s;
-  line-height: var.$line-height-s;
-  text-transform: uppercase;
-  color: var.$color-accented-text;
+  @include mixin.font-s;
 }
 
 .page-footer__developer-link-text {
-  margin-right: 12px;
+  margin: 0 12px 0 0;
 }

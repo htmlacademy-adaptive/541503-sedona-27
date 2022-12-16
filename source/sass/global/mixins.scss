@@ -2,10 +2,8 @@
 @use "variables.scss" as var;
 
 @mixin title-font-s {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 
-  font-family: var.$main-font;
   font-size: var.$font-m;
   line-height: var.$line-height-l;
   font-weight: var.$bold;
@@ -15,8 +13,7 @@
 }
 
 @mixin title-font-l {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 
   font-family: var.$main-font;
   font-size: var.$font-l;
@@ -28,10 +25,8 @@
 }
 
 @mixin text-font {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 
-  font-family: var.$main-font;
   font-size: var.$font-s;
   line-height: var.$line-height-s;
   font-weight: var.$normal;
@@ -41,9 +36,28 @@
 }
 
 @mixin label-review-content {
-  font-family: var.$main-font;
   font-size: var.$font-m;
   line-height: var.$line-height-l;
   font-weight: var.$bold;
   color: var.$color-accented-text;
+}
+
+@mixin input-text {
+  font-size: var.$font-m;
+  line-height: var.$line-height-l;
+  font-weight: var.$bold;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+@mixin font-s {
+  font-size: var.$font-s;
+  line-height: var.$line-height-s;
+  text-transform: uppercase;
+  color: var.$color-accented-text;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }

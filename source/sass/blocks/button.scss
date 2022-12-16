@@ -1,16 +1,13 @@
 @use "../global/fonts.scss";
 @use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
 
 .button {
   display: inline-block;
   padding: 16px 49px;
 
-  font-family: var.$main-font;
-  font-size: var.$font-l;
-  line-height: var.$font-l;
-  font-weight: var.$bold;
-  text-transform: uppercase;
-  text-align: center;
+  @include mixin.title-font-l;
+
   color: var.$color-main-bg;
 
   background-color: var.$color-main;

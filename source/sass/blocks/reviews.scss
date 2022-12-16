@@ -1,19 +1,18 @@
-@use "../global/fonts.scss";
 @use "../global/variables.scss" as var;
 @use "../global/mixins.scss" as mixin;
 
 .reviews {
-  padding-top: 36px;
+  padding: 36px 0 0;
 }
 
 .reviews__title {
   @include mixin.title-font-l;
 
-  margin-bottom: 24px;
+  margin: 0 0 24px;
 }
 
 .reviews__lead {
   @include mixin.text-font;
 
-  margin-bottom: 28px;
+  margin: 0 0 28px;
 }

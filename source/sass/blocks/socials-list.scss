@@ -1,12 +1,15 @@
 @use "../global/variables.scss" as var;
+@use "../global/mixins.scss" as mixin;
 
 .socials-list {
   display: flex;
   flex-wrap: wrap;
   column-gap: 6px;
   justify-content: center;
-  padding: 0;
-  list-style-type: none;
+
+  @include mixin.list-reset;
+
+  margin: 0 0 40px;
 }
 
 .socials-list__link {

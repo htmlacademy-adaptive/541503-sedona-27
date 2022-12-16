@@ -1,9 +1,8 @@
-@use "../global/fonts.scss";
 @use "../global/variables.scss" as var;
 @use "../global/mixins.scss" as mixin;
 
 .gallery {
-  padding-top: 37px;
+  padding: 37px 0 0;
 }
 
 .gallery__title {
@@ -15,5 +14,5 @@
 .gallery__lead {
   @include mixin.text-font;
 
-  margin-bottom: 25px;
+  margin: 0 0 25px 0;
 }

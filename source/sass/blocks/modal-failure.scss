@@ -26,11 +26,11 @@
 .modal-failure__title {
   @include mixin.title-font-s;
 
-  margin-bottom: 24px;
+  margin: 0 0 24px;
 }
 
 .modal-failure__text {
   @include mixin.text-font;
 
-  margin-bottom: 28px;
+  margin: 0 0 28px;
 }

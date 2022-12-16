@@ -11,11 +11,11 @@
 .trip-date__title {
   @include mixin.title-font-l;
 
-  margin-bottom: 24px;
+  margin: 0 0 24px;
 }
 
 .trip-date__lead {
   @include mixin.text-font;
 
-  margin-bottom: 32px;
+  margin: 0 0 32px;
 }

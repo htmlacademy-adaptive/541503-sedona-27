@@ -1,4 +1,3 @@
-@use "../global/fonts.scss";
 @use "../global/variables.scss" as var;
 @use "../global/mixins.scss" as mixin;
 
@@ -12,7 +11,7 @@
 }
 
 .reviews-form-group--icons {
-  padding-bottom: 18px;
+  padding: 0 0 18px;
 }
 
 .reviews-form-group__title {
@@ -22,7 +21,7 @@
 
   @include mixin.title-font-s;
 
-  margin-bottom: 20px;
+  margin: 0 0 20px;
 }
 
 .reviews-form-group__title::before {
