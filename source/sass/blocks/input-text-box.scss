@@ -1,12 +1,22 @@
 @use "../global/fonts.scss";
 @use "../global/variables.scss" as var;
 
+.input-text-box {
+  position: relative;
+
+  padding: 0 0 4px;
+}
+
+.input-text-box--contacts {
+  padding: 0 0 15px;
+}
+
 .input-text-box--contacts::after {
   content: "";
 
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 15px;
 
   width: 58px;
   height: 58px;

@@ -9,10 +9,24 @@
   @include mixin.title-font-s;
 
   margin: 0 0 30px;
+
+  @media (min-width: var.$tablet-width) {
+    @include mixin.title-font-l;
+
+    margin: 0 0 30px;
+  }
 }
 
 .video-subsection__lead {
   @include mixin.text-font;
 
   margin: 0 0 38px;
+
+  @media (min-width: var.$tablet-width) {
+    margin: 0 0 66px;
+  }
+
+  @media (min-width: var.$tablet-width) {
+    margin: 0 0 64px;
+  }
 }

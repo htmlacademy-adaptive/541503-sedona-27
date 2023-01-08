@@ -2,18 +2,28 @@
 @use "../global/mixins.scss" as mixin;
 
 .page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   padding: 29px 18px 23px;
+
+  @media (min-width: var.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 18px 23px;
+  }
 }
 
 .page-footer__hashtag {
-  display: block;
-
   @include mixin.title-font-l;
 
   margin: 0 0 33px;
 }
 
 .page-footer__socials-list {
+  justify-self: center;
   margin: 0 0 40px;
 }
 
@@ -24,6 +34,10 @@
   width: max-content;
 
   @include mixin.font-s;
+
+  @media (min-width: var.$device-width) {
+    margin: -40px auto 0;
+  }
 }
 
 .page-footer__developer-link-text {

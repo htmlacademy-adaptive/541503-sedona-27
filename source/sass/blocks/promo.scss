@@ -12,4 +12,8 @@
 
 .promo__slogan {
   @include mixin.title-font-s;
+
+  @media (min-width: var.$tablet-width) {
+    @include mixin.title-font-l;
+  }
 }

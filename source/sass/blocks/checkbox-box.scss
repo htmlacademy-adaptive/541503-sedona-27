@@ -1,8 +1,12 @@
 @use "../global/variables.scss" as var;
 @use "../global/mixins.scss" as mixin;
 
-.checkbox-box:not(:last-child) {
+.checkbox-box {
   padding: 0 20px 16px;
+
+  @media (min-width: var.$tablet-width) {
+    padding: 0 0 16px;
+  }
 }
 
 .checkbox-box__label {

@@ -2,11 +2,19 @@
 @use "../global/mixins.scss" as mixin;
 
 .advantages-list {
+  display: flex;
+  flex-direction: column;
+
   @include mixin.list-reset;
 
   background-color: #eeeeee;
 
   counter-reset: advantages-counter;
+
+  @media (min-width: var.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .advantages-list__item {
@@ -18,10 +26,17 @@
 }
 
 .advantages-list__item--large {
-  display: grid;
+  grid-column: span 3;
+  display: flex;
+  flex-direction: column;
   padding: 0;
 
   background-color: var.$color-main;
+
+  @media (min-width: var.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .advantages-list__text-content {
@@ -39,6 +54,10 @@
   width: calc(100% - (18px * 2));
   height: 1px;
   background-color: var.$color-advantage-border;
+
+  @media (min-width: var.$tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .advantages-list__item:last-child::after {
@@ -59,6 +78,10 @@
   @include mixin.title-font-s;
 
   margin: 0 0 11px 0;
+
+  @media (min-width: var.$tablet-width) {
+    @include mixin.title-font-l;
+  }
 }
 
 .advantages-list__item--large .advantages-list__title {
@@ -82,4 +105,10 @@
 
 .advantages-list__item--large .advantages-list__text {
   color: var.$color-main-bg;
+}
+
+.advantages-list__item-img {
+  @media (min-width: var.$tablet-width) {
+    grid-column: span 2;
+  }
 }

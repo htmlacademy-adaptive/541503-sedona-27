@@ -1,0 +1,17 @@
+@use "../global/variables.scss" as var;
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: calc(100% - (2 * 20px));
+
+  @media (min-width: var.$tablet-width) {
+    padding: 0 60px;
+    width: calc(100% - (2 * 60px));
+  }
+
+  @media (min-width: var.$device-width) {
+    padding: 0 120px;
+    width: calc(100% - (2 * 120px));
+  }
+}

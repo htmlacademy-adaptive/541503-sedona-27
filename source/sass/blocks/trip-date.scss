@@ -12,10 +12,20 @@
   @include mixin.title-font-l;
 
   margin: 0 0 24px;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: var.$font-xl;
+  }
 }
 
 .trip-date__lead {
   @include mixin.text-font;
 
   margin: 0 0 32px;
+}
+
+.trip-date__button {
+  @media (min-width: var.$tablet-width) {
+    min-width: 458px;
+  }
 }
