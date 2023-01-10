@@ -1,6 +1,10 @@
 @use "../global/variables.scss" as var;
 
 .main-nav-toggle--open {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+
   display: block;
   padding: 0;
   width: 23px;

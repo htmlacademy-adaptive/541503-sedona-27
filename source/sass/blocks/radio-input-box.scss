@@ -2,8 +2,12 @@
 @use "../global/variables.scss" as var;
 @use "../global/mixins.scss" as mixin;
 
-.radio-input-box:not(:last-child) {
+.radio-input-box {
   padding: 0 20px 16px;
+
+  @media (min-width: var.$tablet-width) {
+    padding: 0 0 16px;
+  }
 }
 
 .radio-input-box__label {

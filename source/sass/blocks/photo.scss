@@ -5,6 +5,10 @@
   padding: 24px 0 0;
 
   border-top: 1px solid var.$color-disabled;
+
+  @media (min-width: var.$tablet-width) {
+    border-top: 1px solid transparent;
+  }
 }
 
 .photo__wrapper {
@@ -13,17 +17,21 @@
 
 .photo__link {
   display: block;
-  margin: 0 0 15px;
+  margin: 0;
 }
 
 .photo__title {
-  margin: 0;
+  margin: 15px 0 0;
 
   @include mixin.font-s;
+
+  @media (min-width: var.$tablet-width) {
+    margin: 22px 0 0;
+  }
 }
 
 .photo__author {
-  margin: 0;
+  margin: 11px 0 0;
 
   font-family: var.$main-font;
   font-size: var.$font-s;

@@ -1,4 +1,14 @@
 .logo {
+  position: absolute;
+  left: 50%;
+
+  display: none;
   width: 185px;
   height: 96px;
+
+  transform: translateX(-50%);
+
+  @media (min-width: 768px) {
+    display: block;
+  }
 }

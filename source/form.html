@@ -28,6 +28,9 @@
             <a class="site-menu__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-menu__item">
+            <span class="site-menu__link site-menu__link--empty"></span>
+          </li>
+          <li class="site-menu__item">
             <a class="site-menu__link site-menu__link--current" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-menu__item">
@@ -45,37 +48,39 @@
           <img class="promo-images-wrapper__image" src="img/promo-inner-mobile.jpg" width="320" height="214" alt="Пейзаж Седоны. Красивые скалистые горы с деревьями.">
         </div>
       </section>
-      <section class="reviews">
-        <h2 class="reviews__title container">Оставьте свой отзыв</h2>
-        <p class="reviews__lead container">Помогите нашим отелям стать лучше! оставьте отзыв о&nbsp;них, а&nbsp;также о&nbsp;посещенных вами достопримечательностях</p>
+      <section class="reviews container">
+        <h2 class="reviews__title">Оставьте свой отзыв</h2>
+        <p class="reviews__lead">Помогите нашим отелям стать лучше! оставьте отзыв о&nbsp;них, а&nbsp;также о&nbsp;посещенных вами достопримечательностях</p>
         <form class="reviews-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="reviews-form__group reviews-form-group">
-            <legend class="reviews-form-group__title">Представьтесь:</legend>
-            <div class="reviews-form-group__box input-text-box">
-              <label class="input-text-box__label" for="reviews-form-name-field">Имя<sup>*</sup>:</label>
-              <input class="input-text-box__input-text input-text" id="reviews-form-name-field" name="name" type="text" placeholder="Имя" value="Пётр" required>
-            </div>
-            <div class="reviews-form-group__box input-text-box">
-              <label class="input-text-box__label" for="reviews-form-surname-field">Фамилия<sup>*</sup>:</label>
-              <input class="input-text-box__input-text input-text" id="reviews-form-surname-field" name="surname" type="text" placeholder="Фамилия" value="Иванов *" required>
-            </div>
-            <div class="reviews-form-group__box input-text-box">
-              <label class="input-text-box__label" for="reviews-form-fathers-name-field">Отчество<sup>*</sup>:</label>
-              <input class="input-text-box__input-text input-text" id="reviews-form-fathers-name-field" name="fathers-name" type="text" placeholder="Отчество" value="Викторович" required>
-            </div>
-          </fieldset>
-          <fieldset class="reviews-form__group reviews-form-group reviews-form-group--icons">
-            <legend class="reviews-form-group__title">Контактная информация:</legend>
-            <div class="reviews-form-group__box input-text-box input-text-box--contacts input-text-box--phone">
-              <label class="input-text-box__label" for="reviews-form-phone-field">Контактный телефон<sup>*</sup>:</label>
-              <input class="input-text-box__input-text input-text" id="reviews-form-phone-field" name="telephone-number" type="tel" placeholder="Введите телефон" value="" required>
-            </div>
-            <div class="reviews-form-group__box input-text-box input-text-box--contacts input-text-box--email">
-              <label class="input-text-box__label" for="reviews-form-email-field">Электронная почта<sup>*</sup>:</label>
-              <input class="input-text-box__input-text input-text" id="reviews-form-email-field" name="email" type="email" placeholder="Введите e-mail" value="" required>
-            </div>
-          </fieldset>
-          <fieldset class="reviews-form__group reviews-form-group">
+          <div class="reviews-form__groups-wrapper">
+            <fieldset class="reviews-form__group reviews-form-group">
+              <legend class="reviews-form-group__title">Представьтесь:</legend>
+              <div class="reviews-form-group__box input-text-box">
+                <label class="input-text-box__label" for="reviews-form-name-field">Имя<sup>*</sup>:</label>
+                <input class="input-text-box__input-text input-text" id="reviews-form-name-field" name="name" type="text" placeholder="Имя" value="Пётр" required>
+              </div>
+              <div class="reviews-form-group__box input-text-box">
+                <label class="input-text-box__label" for="reviews-form-surname-field">Фамилия<sup>*</sup>:</label>
+                <input class="input-text-box__input-text input-text" id="reviews-form-surname-field" name="surname" type="text" placeholder="Фамилия" value="Иванов *" required>
+              </div>
+              <div class="reviews-form-group__box input-text-box">
+                <label class="input-text-box__label" for="reviews-form-fathers-name-field">Отчество<sup>*</sup>:</label>
+                <input class="input-text-box__input-text input-text" id="reviews-form-fathers-name-field" name="fathers-name" type="text" placeholder="Отчество" value="Викторович" required>
+              </div>
+            </fieldset>
+            <fieldset class="reviews-form__group reviews-form-group reviews-form-group--icons">
+              <legend class="reviews-form-group__title">Контактная информация:</legend>
+              <div class="reviews-form-group__box input-text-box input-text-box--contacts input-text-box--phone">
+                <label class="input-text-box__label" for="reviews-form-phone-field">Контактный телефон<sup>*</sup>:</label>
+                <input class="input-text-box__input-text input-text" id="reviews-form-phone-field" name="telephone-number" type="tel" placeholder="Введите телефон" value="" required>
+              </div>
+              <div class="reviews-form-group__box input-text-box input-text-box--contacts input-text-box--email">
+                <label class="input-text-box__label" for="reviews-form-email-field">Электронная почта<sup>*</sup>:</label>
+                <input class="input-text-box__input-text input-text" id="reviews-form-email-field" name="email" type="email" placeholder="Введите e-mail" value="" required>
+              </div>
+            </fieldset>
+          </div>
+          <fieldset class="reviews-form__group reviews-form-group reviews-form-group--impression">
             <legend class="reviews-form-group__title">Ваше общее впечатление:</legend>
             <div class="reviews-form-group__box radio-input-box">
               <input class="radio-input-box__radio-input visually-hidden" id="reviews-form-positive-impression" name="impression" value="positive-impression" type="radio" checked>
@@ -90,7 +95,7 @@
               <label class="radio-input-box__label" for="reviews-form-unknown-impression">Затрудняюсь ответить</label>
             </div>
           </fieldset>
-          <fieldset class="reviews-form__group reviews-form-group">
+          <fieldset class="reviews-form__group reviews-form-group reviews-form-group--attraction">
             <legend class="reviews-form-group__title">Посещенные достопримечательности:</legend>
             <div class="reviews-form-group__box checkbox-box">
               <input class="checkbox-box__checkbox visually-hidden" id="reviews-form-devils-bridge" name="devils-bridge" type="checkbox" checked>

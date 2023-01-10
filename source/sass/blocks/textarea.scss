@@ -5,6 +5,7 @@
 .textarea {
   padding: 16px;
   width: 100%;
+  max-width: 768px;
   height: 150px;
 
   background-color: var.$color-input-bg;

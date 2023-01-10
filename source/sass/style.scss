@@ -3,8 +3,10 @@
 @use "global/variables.scss" as var;
 @use "global/mixins.scss";
 @use "helpers/visually-hidden.scss";
+@use "helpers/container.scss";
 @use "blocks/page.scss";
 @use "global/global-selectors.scss";
+@use "blocks/main-nav.scss";
 @use "blocks/logo.scss";
 @use "blocks/main-nav-toggle.scss";
 @use "blocks/site-menu.scss";
