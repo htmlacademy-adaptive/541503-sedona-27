@@ -11,6 +11,16 @@
   }
 }
 
+.photo--large {
+  @media (min-width: var.$tablet-width) {
+    grid-column: span 2;
+  }
+
+  @media (min-width: var.$device-width) {
+    grid-column: span 3;
+  }
+}
+
 .photo__wrapper {
   padding: 0 20px;
 }

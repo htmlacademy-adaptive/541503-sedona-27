@@ -1,14 +1,19 @@
 .logo {
   position: absolute;
   left: 50%;
+  z-index: 11;
 
-  display: none;
+  display: block;
   width: 185px;
   height: 96px;
 
   transform: translateX(-50%);
+}
 
-  @media (min-width: 768px) {
-    display: block;
-  }
+.logo:hover {
+  opacity: 0.6;
+}
+
+.logo:active {
+  opacity: 0.3;
 }

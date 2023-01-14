@@ -30,9 +30,22 @@
   border-radius: 4px;
 }
 
+.checkbox-box__label:hover::before,
+.checkbox-box__checkbox:focus + .checkbox-box__label::before {
+  background-color: var.$color-disabled;
+}
+
+.checkbox-box__label:active::before {
+  background-color: var.$color-radio-checkbox-down;
+}
+
 .checkbox-box__checkbox:checked + .checkbox-box__label::before {
-  background-image: url("../../img/tick.svg");
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-size: 22px 16px;
   background-position: center center;
+}
+
+.radio-input-box__label:active + .radio-input-box__label::before {
+  background-color: rgba(51, 51, 51, 0.3);
 }

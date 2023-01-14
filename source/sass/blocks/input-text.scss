@@ -6,6 +6,7 @@
   padding: 16px 64px 16px 16px;
   width: 100%;
 
+  font-family: var.$main-font;
   @include mixin.input-text;
   color: var.$color-accented-text;
 
@@ -19,4 +20,5 @@
 
 .input-text::placeholder {
   @include mixin.input-text;
+  color: rgba(0, 0, 0, 0.3);
 }
