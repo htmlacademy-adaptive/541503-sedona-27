@@ -8,6 +8,9 @@
     <link rel="icon" type="image/png" href="img/favicon.png" sizes="32x32">
     <link rel="icon" type="image/x-icon" href="../favicon.ico" sizes="32x32">
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" sizes="32x32">
+    <link rel="icon" href="img/favicons/favicon-svg.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png" sizes="180x180">
+    <link rel="manifest" href="manifest.webmanifest">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона - страница формы отзывов</title>
   </head>
@@ -45,8 +48,16 @@
       <section class="promo">
         <h2 class="visually-hidden">Промо-блок</h2>
         <div class="promo__images-wrapper promo-images-wrapper">
-          <img class="promo-images-wrapper__image-text--inner" src="img/sedona-text.svg" width="229" height="39" alt="Добро пожаловать в великолепную Седону. “Потому что Гранд Каньон - отстой!„">
-          <img class="promo-images-wrapper__image" src="img/promo-inner-mobile.jpg" width="320" height="214" alt="Пейзаж Седоны. Красивые скалистые горы с деревьями.">
+          <picture>
+            <source media=" (min-width: 769px) " srcset="img/sedona-text.svg 1x, img/sedona-text.svg 2x">
+            <source media=" (min-width: 321px) " srcset="img/sedona-text.svg 1x, img/sedona-text.svg 2x">
+            <img class="promo-images-wrapper__image-text--inner" src="img/sedona-text.svg" srcset="img/sedona-text.svg 2x" width="229" height="39" alt="Добро пожаловать в великолепную Седону. “Потому что Гранд Каньон - отстой!„">
+          </picture>
+          <picture>
+            <source media=" (min-width: 1200px) " srcset="img/promo-inner-desktop.jpg 1x, img/promo-inner-desktop@2x.jpg 2x">
+            <source media=" (min-width: 321px) " srcset="img/promo-inner-tablet.jpg 1x, img/promo-inner-tablet@2x.jpg 2x">
+            <img class="promo-images-wrapper__image" src="img/promo-inner-mobile.jpg" srcset="img/promo-inner-mobile@2x.jpg 2x" width="320" height="214" alt="Пейзаж Седоны. Красивые скалистые горы с деревьями.">
+          </picture>
         </div>
       </section>
       <section class="gallery">
@@ -56,7 +67,11 @@
           <li class="photo photo--large">
             <div class="photo__wrapper">
               <a class="photo__link" href="#">
-                <img class="photo__image" src="img/open-spaces-mobile.jpg" width="280" height="280" alt="Просторы Седоны.">
+                <picture>
+                  <source media=" (min-width: 1200px) " srcset="img/open-spaces-desktop.jpg 1x, img/open-spaces-desktop@2x.jpg 2x">
+                  <source media=" (min-width: 768px) " srcset="img/open-spaces-tablet.jpg 1x, img/open-spaces-tablet@2x.jpg 2x">
+                  <img class="photo__image" src="img/open-spaces-mobile.jpg" srcset="img/open-spaces-mobile@2x.jpg 2x" width="280" height="280" alt="Просторы Седоны.">
+                </picture>
               </a>
               <div class="photo__subscription">
                 <div class="photo__caption">
@@ -66,7 +81,7 @@
                 <div class="likes">
                   <button class="likes__button" type="button">
                     <svg class="likes__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                      <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentColor"/>
                     </svg>
                     <span class="visually-hidden">Мне нравится</span>
                   </button>
@@ -78,7 +93,11 @@
           <li class="photo">
             <div class="photo__wrapper">
               <a class="photo__link" href="#">
-                <img class="photo__image" src="img/vegetation-mobile.jpg" width="280" height="280" alt="Кактус Седоны.">
+                <picture>
+                  <source media=" (min-width: 1200px) " srcset="img/vegetation-desktop.jpg 1x, img/vegetation-desktop@2x.jpg 2x">
+                  <source media=" (min-width: 768px) " srcset="img/vegetation-tablet.jpg 1x, img/vegetation-tablet@2x.jpg 2x">
+                  <img class="photo__image" src="img/vegetation-mobile.jpg" srcset="img/vegetation-mobile@2x.jpg 2x" width="280" height="280" alt="Кактус Седоны.">
+                </picture>
               </a>
               <div class="photo__subscription">
                 <div class="photo__caption">
@@ -88,7 +107,7 @@
                 <div class="likes">
                   <button class="likes__button" type="button">
                     <svg class="likes__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                      <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentColor"/>
                     </svg>
                     <span class="visually-hidden">Мне нравится</span>
                   </button>
@@ -100,7 +119,11 @@
           <li class="photo">
             <div class="photo__wrapper">
               <a class="photo__link" href="#">
-                <img class="photo__image" src="img/north-mobile.jpg" width="280" height="280" alt="Горная дорога.">
+                <picture>
+                  <source media=" (min-width: 1200px) " srcset="img/north-desktop.jpg 1x, img/north-desktop@2x.jpg 2x">
+                  <source media=" (min-width: 768px) " srcset="img/north-tablet.jpg 1x, img/north-tablet@2x.jpg 2x">
+                  <img class="photo__image" src="img/north-mobile.jpg" srcset="img/north-mobile@2x.jpg 2x" width="280" height="280" alt="Горная дорога.">
+                </picture>
               </a>
               <div class="photo__subscription">
                 <div class="photo__caption">
@@ -110,7 +133,7 @@
                 <div class="likes">
                   <button class="likes__button" type="button">
                     <svg class="likes__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                      <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentColor"/>
                     </svg>
                     <span class="visually-hidden">Мне нравится</span>
                   </button>
@@ -122,7 +145,11 @@
           <li class="photo">
             <div class="photo__wrapper">
               <a class="photo__link" href="#">
-                <img class="photo__image" src="img/devils-bridge-gallery-mobile.jpg" width="280" height="280" alt="Мост дьявола.">
+                <picture>
+                  <source media=" (min-width: 1200px) " srcset="img/devils-bridge-gallery-desktop.jpg 1x, img/devils-bridge-gallery-desktop@2x.jpg 2x">
+                  <source media=" (min-width: 768px) " srcset="img/devils-bridge-gallery-desktop.jpg 1x, img/devils-bridge-gallery-desktop@2x.jpg 2x">
+                  <img class="photo__image" src="img/devils-bridge-gallery-mobile.jpg" srcset="img/devils-bridge-gallery-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола.">
+                </picture>
               </a>
               <div class="photo__subscription">
                 <div class="photo__caption">
@@ -132,7 +159,7 @@
                 <div class="likes">
                   <button class="likes__button" type="button">
                     <svg class="likes__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                      <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentColor"/>
                     </svg>
                     <span class="visually-hidden">Мне нравится</span>
                   </button>
@@ -146,7 +173,11 @@
           <h3 class="video-subsection__title">Все&nbsp;еще&nbsp;сомневаетесь?</h3>
           <p class="video-subsection__lead">Смотрите видеопрезентацию и&nbsp;скорее за&nbsp;билетами, пока они не подорожали в&nbsp;очередной&nbsp;раз!</p>
           <div class="video">
-            <img class="video__poster" src="img/video-mobile.jpg" width="280" height="177" alt="Фрагмент горной дороги с автомобилями на ней.">
+            <picture>
+              <source media=" (min-width: 1200px) " srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media=" (min-width: 768px) " srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="video__poster" src="img/video-mobile.jpg" scrset="img/video-mobile@2x.jpg 2x" width="280" height="177" alt="Фрагмент горной дороги с автомобилями на ней.">
+            </picture>
             <button class="video__button" type="button">
               <span class="visually-hidden">Смотреть видео</span>
             </button>

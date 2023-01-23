@@ -2,7 +2,15 @@
 @use "../global/mixins.scss" as mixin;
 
 .advantage-sublist-item {
-  padding: 32px 18px 0 65px;
+  padding: 25px 18px 28px 65px;
+
+  @media (min-width: var.$tablet-width) {
+    padding: 158px 33px 60px;
+  }
+
+  @media (min-width: var.$device-width) {
+    padding: 169px 50px 69px;
+  }
 }
 
 .advantage-sublist-item__title {

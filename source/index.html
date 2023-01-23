@@ -8,6 +8,9 @@
     <link rel="icon" type="image/png" href="img/favicon.png" sizes="32x32">
     <link rel="icon" type="image/x-icon" href="../favicon.ico" sizes="32x32">
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" sizes="32x32">
+    <link rel="icon" href="img/favicons/favicon-svg.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png" sizes="180x180">
+    <link rel="manifest" href="manifest.webmanifest">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона - главная страница</title>
   </head>
@@ -45,8 +48,16 @@
       <section class="promo">
         <h2 class="visually-hidden">Промо-блок</h2>
         <div class="promo__images-wrapper promo-images-wrapper">
-          <img class="promo-images-wrapper__image-text" src="img/welcome.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону. “Потому что Гранд Каньон - отстой!„">
-          <img class="promo-images-wrapper__image" src="img/promo-image-mobile.jpg" width="320" height="389" alt="Пейзаж Седоны. Красивые скалистые горы с деревьями.">
+          <picture>
+            <source media=" (min-width: 769px) " srcset="img/welcome-desktop.svg 1x, img/welcome-desktop.svg 2x">
+            <source media=" (min-width: 321px) " srcset="img/welcome-tablet.svg 1x, img/welcome-tablet.svg 2x">
+            <img class="promo-images-wrapper__image-text" src="img/welcome.svg" srcset="img/welcome.svg 2x" width="282" height="214" alt="Добро пожаловать в великолепную Седону. “Потому что Гранд Каньон - отстой!„">
+          </picture>
+          <picture>
+            <source media=" (min-width: 1200px) " srcset="img/promo-image-desktop.jpg 1x, img/promo-image-desktop@2x.jpg 2x">
+            <source media=" (min-width: 321px) " srcset="img/promo-image-tablet.jpg 1x, img/promo-image-tablet@2x.jpg 2x">
+            <img class="promo-images-wrapper__image" src="img/promo-image-mobile.jpg" srcset="img/promo-image-mobile@2x.jpg 2x" width="320" height="389" alt="Пейзаж Седоны. Красивые скалистые горы с деревьями.">
+          </picture>
         </div>
         <p class="promo__slogan">Седона — небольшой<br> городок в&nbsp;Аризоне, заслуживающий большего!</p>
       </section>
@@ -54,12 +65,16 @@
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <p class="advantages__lead">Рассмотрим 5 причин, по&nbsp;которым Седона круче, чем&nbsp;Гранд-Каньон!</p>
         <ul class="advantages-list">
-          <li class="advantages-list__item advantages-list__item--large advantages-list__item--accented">
+          <li class="advantages-list__item advantages-list__item--large">
             <div class="advantages-list__text-content">
               <h3 class="advantages-list__title">Настоящий городок</h3>
               <p class="advantages-list__text">Седона не&nbsp;аттракцион для&nbsp;туристов, там&nbsp;течёт своя жизнь</p>
             </div>
-            <img class="advantages-list__item-img" src="img/photo-city-mobile.jpg" width="320" height="260" alt="Фрагмент красивой архитектуры городка в американском стиле, также видно красивые деревья.">
+            <picture>
+              <source media=" (min-width: 1200px) " srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+              <source media=" (min-width: 768px) " srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+              <img class="advantages-list__item-img" src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" width="320" height="260" alt="Фрагмент красивой архитектуры городка в американском стиле, также видно красивые деревья.">
+            </picture>
             <ul class="advantages-list__sublist advantage-sublist">
               <li class="advantage-sublist-item advantage-sublist-item--housing">
                 <h4 class="advantage-sublist-item__title">Жильё</h4>
@@ -78,9 +93,13 @@
           <li class="advantages-list__item advantages-list__item--large advantages-list__item--reverse-layout">
             <div class="advantages-list__text-content">
               <h3 class="advantages-list__title">Там есть мост дьявола</h3>
-              <p class="advantages-list__text">Да, по&nbsp;нему можно пройти! Если вы&nbsp;осмелитесь, конечно</p>
+              <p class="advantages-list__text">Да, по&nbsp;нему можно пройти!<br media=" (min-width: 1200px) "> Если вы&nbsp;осмелитесь, конечно</p>
             </div>
-            <img class="advantages-list__item-img" src="img/devils-bridge-mobile.jpg" width="320" height="260" alt="Мост дьявола - узкий скалистый мост над пропастью на фоне красивого пейзажа.">
+            <picture>
+              <source media=" (min-width: 1200px) " srcset="img/devils-bridge-desktop.jpg 1x, img/devils-bridge-desktop@2x.jpg 2x">
+              <source media=" (min-width: 768px) " srcset="img/devils-bridge-tablet.jpg 1x, img/devils-bridge-tablet@2x.jpg 2x">
+              <img class="advantages-list__item-img" src="img/devils-bridge-mobile.jpg" srcset="img/devils-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост дьявола - узкий скалистый мост над пропастью на фоне красивого пейзажа.">
+            </picture>
           </li>
           <li class="advantages-list__item">
             <h3 class="advantages-list__title">Небольшая площадь</h3>
@@ -92,7 +111,7 @@
           </li>
           <li class="advantages-list__item">
             <h3 class="advantages-list__title">Мало туристов</h3>
-            <p class="advantages-list__text">Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там</p>
+            <p class="advantages-list__text">Большинство едет в&nbsp;Гранд Каньон и толпится там</p>
           </li>
         </ul>
       </section>

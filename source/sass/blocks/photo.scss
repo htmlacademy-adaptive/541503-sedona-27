@@ -2,12 +2,22 @@
 @use "../global/mixins.scss" as mixin;
 
 .photo {
+  position: relative;
+
   padding: 24px 0 0;
 
   border-top: 1px solid var.$color-disabled;
 
   @media (min-width: var.$tablet-width) {
+    padding: 0;
+
     border-top: 1px solid transparent;
+  }
+}
+
+.photo:not(.photo--large) {
+  @media (min-width: var.$tablet-width) {
+    margin: -1px 0 0;
   }
 }
 
@@ -23,6 +33,14 @@
 
 .photo__wrapper {
   padding: 0 20px;
+
+  @media (min-width: var.$tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: var.$device-width) {
+    padding: 0;
+  }
 }
 
 .photo__link {
@@ -30,13 +48,47 @@
   margin: 0;
 }
 
+.photo__subscription {
+  padding: 15px 20px 25px;
+
+  @media (min-width: var.$tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 20px 15px;
+
+    background-color: var.$color-input-bg;
+  }
+
+  @media (min-width: var.$device-width) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 17px 20px 17px 25px;
+
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.photo--large .photo__subscription {
+  @media (min-width: var.$device-width) {
+    padding: 22px 20px 15px 21px;
+  }
+}
+
 .photo__title {
-  margin: 15px 0 0;
+  margin: 0;
 
   @include mixin.font-s;
 
   @media (min-width: var.$tablet-width) {
     margin: 22px 0 0;
+  }
+
+  @media (min-width: var.$device-width) {
+    color: var.$color-main-bg;
   }
 }
 
@@ -47,4 +99,8 @@
   font-size: var.$font-s;
   line-height: var.$line-height-s;
   color: var.$color-main-text;
+
+  @media (min-width: var.$device-width) {
+    color: var.$color-main-bg;
+  }
 }

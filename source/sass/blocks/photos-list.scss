@@ -15,7 +15,7 @@
     border-bottom: 1px solid transparent;
   }
 
-  @media (min-width: var.$tablet-width) {
+  @media (min-width: var.$device-width) {
     grid-template-columns: repeat(3, 1fr);
   }
 }

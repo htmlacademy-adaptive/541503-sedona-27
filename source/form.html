@@ -8,6 +8,9 @@
     <link rel="icon" type="image/png" href="img/favicon.png" sizes="32x32">
     <link rel="icon" type="image/x-icon" href="../favicon.ico" sizes="32x32">
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" sizes="32x32">
+    <link rel="icon" href="img/favicons/favicon-svg.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png" sizes="180x180">
+    <link rel="manifest" href="manifest.webmanifest">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона - страница формы отзывов</title>
   </head>
@@ -45,8 +48,16 @@
       <section class="promo">
         <h2 class="visually-hidden">Промо-блок</h2>
         <div class="promo__images-wrapper promo-images-wrapper">
-          <img class="promo-images-wrapper__image-text--inner" src="img/sedona-text.svg" width="229" height="39" alt="Добро пожаловать в великолепную Седону. “Потому что Гранд Каньон - отстой!„">
-          <img class="promo-images-wrapper__image" src="img/promo-inner-mobile.jpg" width="320" height="214" alt="Пейзаж Седоны. Красивые скалистые горы с деревьями.">
+          <picture>
+            <source media=" (min-width: 769px) " srcset="img/sedona-text.svg 1x, img/sedona-text.svg 2x">
+            <source media=" (min-width: 321px) " srcset="img/sedona-text.svg 1x, img/sedona-text.svg 2x">
+            <img class="promo-images-wrapper__image-text--inner" src="img/sedona-text.svg" srcset="img/sedona-text.svg 2x" width="229" height="39" alt="Добро пожаловать в великолепную Седону. “Потому что Гранд Каньон - отстой!„">
+          </picture>
+          <picture>
+            <source media=" (min-width: 1200px) " srcset="img/promo-inner-desktop.jpg 1x, img/promo-inner-desktop@2x.jpg 2x">
+            <source media=" (min-width: 321px) " srcset="img/promo-inner-tablet.jpg 1x, img/promo-inner-tablet@2x.jpg 2x">
+            <img class="promo-images-wrapper__image" src="img/promo-inner-mobile.jpg" srcset="img/promo-inner-mobile@2x.jpg 2x" width="320" height="214" alt="Пейзаж Седоны. Красивые скалистые горы с деревьями.">
+          </picture>
         </div>
       </section>
       <section class="reviews container">

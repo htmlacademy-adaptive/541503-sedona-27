@@ -1,5 +1,9 @@
+@use "../global/variables.scss" as var;
+
 .promo-images-wrapper {
   position: relative;
+
+  background-color: var.$color-accented-text;
 }
 
 .promo-images-wrapper::after {
@@ -18,7 +22,11 @@
   background-image: url("../../img/promo-decor-mobile.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position: center center;
+  background-position: center bottom;
+
+  @media (min-width: var.$tablet-width) {
+    background-image: url("../../img/promo-decor-desktop.svg");
+  }
 }
 
 .promo-images-wrapper__image-text {
@@ -26,7 +34,21 @@
   left: 50%;
   top: 90px;
 
+  max-width: 460px;
+
   transform: translateX(-50%);
+
+  @media (max-width: var.$mobile-width-only) {
+    max-width: 282px;
+  }
+
+  @media (min-width: var.$tablet-width) {
+    top: 77px;
+  }
+
+  @media (min-width: var.$device-width) {
+    top: 78px;
+  }
 }
 
 .promo-images-wrapper__image-text--inner {
@@ -34,5 +56,19 @@
   left: 50%;
   top: 52px;
 
+  max-width: 457px;
+
   transform: translateX(-50%);
+
+  @media (max-width: var.$mobile-width-only) {
+    max-width: 229px;
+  }
+
+  @media (min-width: var.$tablet-width) {
+    top: 95px;
+  }
+
+  @media (min-width: var.$device-width) {
+    top: 101px;
+  }
 }
