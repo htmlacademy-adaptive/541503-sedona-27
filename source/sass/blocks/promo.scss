@@ -4,6 +4,10 @@
 
 .promo {
   padding: 0 0 35px;
+
+  @media (max-width: var.$mobile-width-only) {
+    margin-top: 56px;
+  }
 }
 
 .promo__images-wrapper {

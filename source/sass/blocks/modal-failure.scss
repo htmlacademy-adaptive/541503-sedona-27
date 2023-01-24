@@ -8,6 +8,7 @@
   z-index: 11;
 
   display: none;
+  margin: 0 auto;
   padding: 45px 42px 35px 41px;
   width: 100%;
 
@@ -17,6 +18,10 @@
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 
   transform: translateY(-50%);
+
+  @media (max-width: var.$tablet-width) {
+    max-width: 400px;
+  }
 }
 
 .modal-failure--shown {

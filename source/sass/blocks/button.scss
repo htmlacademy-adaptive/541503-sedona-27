@@ -16,6 +16,20 @@
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: var.$color-main-hover;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: var.$color-main-down;
+}
+
+.button:disabled {
+  background-color: var.$color-disabled;
+}
+
 .button--modal {
   padding: 18px 64px 14px;
 }

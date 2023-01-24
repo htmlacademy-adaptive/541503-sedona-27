@@ -5,4 +5,12 @@
   @include mixin.text-font;
 
   margin-bottom: 16px;
+
+  @media (min-width: var.$tablet-width) {
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: var.$device-width) {
+    margin-bottom: 44px;
+  }
 }

@@ -31,6 +31,15 @@
   border-radius: 50%;
 }
 
+.radio-input-box__label:hover::before,
+.radio-input-box__radio-input:focus + .radio-input-box__label::before {
+  background-color: var.$color-disabled;
+}
+
+.radio-input-box__label:active::before {
+  background-color: var.$color-radio-checkbox-down;
+}
+
 .radio-input-box__radio-input:checked + .radio-input-box__label::after {
   content: "";
 
@@ -43,4 +52,8 @@
 
   background-color: var.$color-main-text;
   border-radius: 50%;
+}
+
+.radio-input-box__label:active + .radio-input-box__label::after {
+  background-color: rgba(51, 51, 51, 0.3);
 }

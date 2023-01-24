@@ -18,10 +18,24 @@
   cursor: pointer;
 }
 
+.likes__icon {
+  opacity: 0.3;
+
+  @media (min-width: var.$device-width) {
+    opacity: 1;
+
+    color: var.$color-main-bg;
+  }
+}
+
 .likes__number {
   font-family: var.$main-font;
   font-size: var.$font-s;
   line-height: var.$line-height-s;
   font-weight: var.$bold;
   color: var.$color-accented-text;
+
+  @media (min-width: var.$device-width) {
+    color: var.$color-main-bg;
+  }
 }
